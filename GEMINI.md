@@ -1,11 +1,35 @@
 # Project Overview
 
-TODO: Write a clear and concise summary of the project's purpose, main technologies, and architecture.
+This project is a Go CLI program to make a database connection towards a postgres instance. so it is able to create database via a file .
 
 # Building and Running
 
-TODO: Document the key commands for building, running, and testing the project.
+To run the program, use the following command:
+
+```bash
+go run main.go -host <host> -port <port> -user <user> -password <password> -dbname <dbname> -file db.sql
+```
+
+Replace the placeholders with your actual database credentials.
 
 # Development Conventions
 
-TODO: Describe any coding styles, testing practices, or contribution guidelines you can infer from the codebase.
+This project uses the standard Go conventions.
+
+# Release Process
+
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release) to automate the release process. When a commit is pushed to the `main` branch, a new release is automatically created based on the commit messages.
+
+To trigger a release, use the following commit message format:
+
+```
+<type>(<scope>): <subject>
+```
+
+For example:
+
+```
+feat: Add new feature
+fix: Fix bug
+chore: Update documentation
+```
