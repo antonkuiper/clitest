@@ -12,6 +12,22 @@ go run main.go -host <host> -port <port> -user <user> -password <password> -dbna
 
 Replace the placeholders with your actual database credentials.
 
+## Testing with Docker
+
+This project includes a `Makefile` to easily start and stop a Postgres container for testing purposes.
+
+To start the Postgres container, run the following command:
+
+```bash
+make start-postgres
+```
+
+To stop the Postgres container, run the following command:
+
+```bash
+make stop-postgres
+```
+
 # Development Conventions
 
 This project uses the standard Go conventions.
